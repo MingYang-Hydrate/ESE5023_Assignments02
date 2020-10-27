@@ -10,3 +10,5 @@ b_Data <-as_tibble(b_Data)
  select(weight1,Time_second)%>%
    ggplot(aes(x=Time_second,y=weight1))+
    geom_line()
+
+#good work
