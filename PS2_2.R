@@ -21,3 +21,6 @@ a_Data%>%
   ggplot(aes(x=month, y=windspeed_month)) + 
   geom_line()
 #通过观察可发现月平均风速呈现螺旋上升状态，在2020年风速尤其大
+
+# It is required to explain how you filter the data in your report.
+# And your explaination can be more explicit and detailed
