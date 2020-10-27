@@ -18,6 +18,7 @@ EQ<-Sig_Eqs%>%
   filter(EQ_PRIMARY >6) %>%
   group_by(YEAR) %>% 
   summarize(totalnumber_of_EQ=length(EQ_PRIMARY))
+## using n() is also reconmended ##@MingYANG 
 ggplot(EQ,aes(x=YEAR, y=totalnumber_of_EQ)) + 
   geom_line()
 #观察到全球地震发生数在1700年左右急剧上升
@@ -54,7 +55,7 @@ tbl_new<-as_tibble(df1)
 tbl_new %>% 
   arrange(desc(EQ_number))
 
-
+# good work
 
 
 
