@@ -54,7 +54,7 @@ tbl_new<-as_tibble(df1)
 tbl_new %>% 
   arrange(desc(EQ_number))
 
-
+# good work
 
 
 
