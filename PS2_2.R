@@ -11,6 +11,10 @@ a_Data%>%
   filter(substr(WND,9,12)!="9999") %>% 
   filter(substr(WND,5,7)=="1,N")%>%
   filter(substr(WND,14,14)=="1")%>%
+# @MingYANG noticed:
+# the wind speed has the SCALING FACTOR of 10
+# so the data should multiply 0.1 to obtain the real speed
+# the end
   #paste 函数是姜浩同学提供的思路
  mutate(Month=as.character(paste0(substr(DATE,1,4),"-",substr(DATE,6,7)))) %>%
   mutate(wind_speed=as.numeric(substr(WND,9,12)))%>%
